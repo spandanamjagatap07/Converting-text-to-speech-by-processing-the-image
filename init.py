@@ -3,17 +3,10 @@ import pytesseract
 from gtts import gTTS
 import os
 
-# Path to the Tesseract-OCR executable (only required for Windows)
-# For Windows, specify the path to tesseract.exe:
-# Example: pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-# For Linux/Mac, if installed correctly, you can skip this step.
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-
 def image_to_text(image_path):
-    #"""
     #Converts image to text using Tesseract OCR.
-   # """
-    # Open an image file
+   
+    # Opening an image file
     img = Image.open('C://Users//DELL//Documents//miniproject//image2.jpg')
     
     # Use pytesseract to extract text
