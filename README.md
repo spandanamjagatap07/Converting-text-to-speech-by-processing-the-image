@@ -26,13 +26,13 @@ This project extracts text from an image using **Optical Character Recognition (
 
 ### Functions in the Code
 
-* **`image_to_text()`**
+* **image_to_text()**
   Extracts text from the given image using Tesseract OCR.
 
-* **`text_to_speech()`**
+* **text_to_speech()**
   Converts the extracted text into speech and saves it as an audio file.
 
-* **`main()`**
+* **main()**
   Controls the workflow by calling the OCR function and the text-to-speech function.
 
 ### Output
