@@ -1,12 +1,56 @@
-# Converting-text-to-speech-by-processing-the-image
-Text-to-image models turn written prompts into matching visuals by starting with random noise and refining it step by step. They work in a compressed latent space instead of raw pixels, making the process faster and more efficient.
+## 📌 Image to Text to Speech Converter
 
-Image Input – Users can upload or capture images containing printed or handwritten text (e.g., books, signboards, documents).
+This project extracts text from an image using **Optical Character Recognition (OCR)** and converts the extracted text into **speech audio**.
 
-Text Extraction (OCR) – The system uses OCR technology (such as Tesseract OCR or EasyOCR) to detect and extract textual content from images.
+### 🚀 Project Overview
 
-Text Preprocessing – The extracted text is cleaned, formatted, and optimized for speech synthesis (removing noise, correcting errors).
+* The program reads an image containing text.
+* It uses **Tesseract OCR** to extract text from the image.
+* The extracted text is then converted into **speech** using **Google Text-to-Speech (gTTS)**.
+* The generated speech is saved as an **MP3 audio file**.
 
-Text-to-Speech Conversion – The processed text is converted into natural human-like speech using a TTS engine pyttsx3
+### ⚙️ Technologies Used
 
-Audio Output – saved as an audio file for offline listening
+* **Python**
+* **Pillow (PIL)** – for image processing
+* **pytesseract** – for Optical Character Recognition (OCR)
+* **gTTS (Google Text-to-Speech)** – for converting text into speech
+
+### 🔄 Working Flow
+
+1. Load the input image using **PIL**.
+2. Apply **pytesseract OCR** to extract text from the image.
+3. Check if text is detected.
+4. Convert the extracted text into speech using **gTTS**.
+5. Save the speech output as an **MP3 audio file**.
+
+### 📂 Functions in the Code
+
+* **`image_to_text()`**
+  Extracts text from the given image using Tesseract OCR.
+
+* **`text_to_speech()`**
+  Converts the extracted text into speech and saves it as an audio file.
+
+* **`main()`**
+  Controls the workflow by calling the OCR function and the text-to-speech function.
+
+### ▶️ Output
+
+* Extracted text is printed in the terminal.
+* Speech audio file is generated and saved as **`output_speech.mp3`**.
+
+### 💡 Use Cases
+
+* Assistive technology for **visually impaired users**
+* Reading **documents or printed text from images**
+* **Educational tools** for text recognition and speech synthesis
+
+---
+
+If you want, I can also give you:
+
+* ⭐ **A full professional GitHub README format**
+* 📊 **Project architecture diagram**
+* 🎤 **Short explanation you can say during project presentation**.
+
